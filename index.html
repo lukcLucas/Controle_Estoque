@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Controle de Estoque</title>
+</head>
+<body>
+    <header>
+        <h1>Controle de Estoque</h1>
+    </header>
+    
+    <main>
+        <section id="formulario">
+            <h2>Adicionar Item ao Estoque</h2>
+            <form id="estoque-form">
+                <input type="text" id="nome-item" placeholder="Nome do Item" required>
+                <input type="number" id="quantidade" placeholder="Quantidade" required>
+                <input type="text" id="preco" placeholder="Preço Unitário" required>
+                <button type="submit">Adicionar Item</button>
+            </form>
+        </section>
+        
+        <section id="tabela">
+            <h2>Itens em Estoque</h2>
+            <table id="estoque-table">
+                <thead>
+                    <tr>
+                        <th>Nome do Item</th>
+                        <th>Quantidade</th>
+                        <th>Preço Unitário</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Os itens do estoque serão adicionados aqui -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Controle de Estoque. Todos os direitos reservados.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
